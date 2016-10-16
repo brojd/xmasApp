@@ -1,0 +1,41 @@
+{
+  "name": "member",
+  "plural": "members",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string"
+    },
+    "photoURL": {
+      "type": "string"
+    },
+    "isGiver": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "hasGiver": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "groups": {
+      "type": "hasAndBelongsToMany",
+      "model": "group",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,36 @@
+{
+  "name": "group",
+  "plural": "groups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "rules": {
+      "type": [
+        "string"
+      ]
+    },
+    "photoURL": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "deadline": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "members": {
+      "type": "hasAndBelongsToMany",
+      "model": "member",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
