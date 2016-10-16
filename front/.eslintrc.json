@@ -22,11 +22,7 @@
         ],
         "linebreak-style": [
             "error",
-<<<<<<< HEAD
             "unix"
-=======
-            "windows"
->>>>>>> origin/master
         ],
         "quotes": [
             "error",
