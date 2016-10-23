@@ -1,7 +1,8 @@
 import { configure } from '@kadira/storybook';
+import 'uikit/dist/css/uikit.min.css';
 
 function loadStories() {
-  require('../stories');
+  require('../src/stories');
 }
 
 configure(loadStories, module);

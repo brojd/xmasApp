@@ -1,1 +1,5 @@
 .idea
+src/components/App/App.stylesheet.css
+src/components/App/App.stylesheet.css.map
+src/components/NavBar/NavBar.stylesheet.css
+src/components/NavBar/NavBar.stylesheet.css.map
